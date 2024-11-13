@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import Link from 'next/link';
+import { CircleDollarSign, GraduationCap } from 'lucide-react';
 
 interface Props {
   className?: string;
@@ -18,16 +19,28 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
       <Accordion type="multiple">
         <AccordionItem value="item-1">
           <AccordionTrigger>
-            <div className="w-full pr-10 flex justify-between">
+            <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
-                Коммерческий проект: MOISEIKIN
+                <span className="max-[678px]:hidden">
+                  Коммерческий проект: MOISEIKIN
+                </span>
+                <span
+                  className="flex items-center gap-2 min-[678px]:hidden"
+                  title="коммерческий проект"
+                >
+                  <CircleDollarSign />
+                  MOISEIKIN
+                </span>
               </span>
               <Link
                 href="https://moiseikin.com/"
                 target="_blank"
                 className="text-sky-800 hover:underline underline-offset-4"
               >
-                https://moiseikin.com/
+                <span className="max-[540px]:hidden">
+                  https://moiseikin.com/
+                </span>
+                <span className="min-[540px]:hidden underline">MOISEIKIN</span>
               </Link>
             </div>
           </AccordionTrigger>
@@ -53,16 +66,26 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
         </AccordionItem>
         <AccordionItem value="item-2">
           <AccordionTrigger>
-            <div className="w-full pr-10 flex justify-between">
+            <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
-                Коммерческий проект: завод Сота
+                <span className="max-[678px]:hidden">
+                  Коммерческий проект: завод Сота
+                </span>
+                <span
+                  className="flex items-center gap-2 min-[678px]:hidden"
+                  title="коммерческий проект"
+                >
+                  <CircleDollarSign />
+                  завод Сота
+                </span>
               </span>
               <Link
                 href="https://shopsota.ru/"
                 target="_blank"
                 className="text-sky-800 hover:underline underline-offset-4"
               >
-                https://shopsota.ru/
+                <span className="max-[540px]:hidden">https://shopsota.ru/</span>
+                <span className="min-[540px]:hidden underline">завод Сота</span>
               </Link>
             </div>
           </AccordionTrigger>
@@ -81,16 +104,30 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
         </AccordionItem>
         <AccordionItem value="item-3">
           <AccordionTrigger>
-            <div className="w-full pr-10 flex justify-between">
+            <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
-                Некоммерческий проект: Confident Pepper
+                <span className="max-[678px]:hidden">
+                  Некоммерческий проект: Confident Pepper
+                </span>
+                <span
+                  className="flex items-center gap-2 min-[678px]:hidden"
+                  title="коммерческий проект"
+                >
+                  <GraduationCap />
+                  <span className="whitespace-nowrap">Confident Pepper</span>
+                </span>
               </span>
               <Link
                 href="https://rt-pepper-v2.vercel.app/"
                 target="_blank"
                 className="text-sky-800 hover:underline underline-offset-4"
               >
-                https://rt-pepper-v2.vercel.app/
+                <span className="max-[540px]:hidden">
+                  https://rt-pepper-v2.vercel.app/
+                </span>
+                <span className="min-[540px]:hidden underline whitespace-nowrap">
+                  Confident Pepper
+                </span>
               </Link>
             </div>
           </AccordionTrigger>
@@ -111,16 +148,28 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
         </AccordionItem>
         <AccordionItem value="item-4">
           <AccordionTrigger>
-            <div className="w-full pr-10 flex justify-between">
+            <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
-                Коммерческий проект: Burmash
+                <span className="max-[678px]:hidden">
+                  Коммерческий проект: Burmash
+                </span>
+                <span
+                  className="flex items-center gap-2 min-[678px]:hidden"
+                  title="коммерческий проект"
+                >
+                  <CircleDollarSign />
+                  Burmash
+                </span>
               </span>
               <Link
                 href="https://vadim700.github.io/burmash-20230419/"
                 target="_blank"
                 className="text-sky-800 hover:underline underline-offset-4"
               >
-                https://vadim700.github.io/burmash-20230419/
+                <span className="max-[540px]:hidden">
+                  https://vadim700.github.io/burmash-20230419/
+                </span>
+                <span className="min-[540px]:hidden underline">Burmash</span>
               </Link>
             </div>
           </AccordionTrigger>
@@ -138,16 +187,28 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
         </AccordionItem>
         <AccordionItem value="item-5">
           <AccordionTrigger>
-            <div className="w-full flex justify-between pr-10">
+            <div className="w-full flex justify-between pr-10 max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
-                Некоммерческий проект: nc-task
+                <span className="max-[678px]:hidden">
+                  Некоммерческий проект: nc-task
+                </span>
+                <span
+                  className="flex items-center gap-2 min-[678px]:hidden"
+                  title="коммерческий проект"
+                >
+                  <GraduationCap />
+                  nc-task
+                </span>
               </span>
               <Link
                 href="https://nc-test-task.vercel.app/2/notes"
                 target="_blank"
                 className="text-sky-800 hover:underline underline-offset-4"
               >
-                https://nc-test-task.vercel.app/2/notes
+                <span className="max-[540px]:hidden">
+                  https://nc-test-task.vercel.app/2/notes
+                </span>
+                <span className="min-[540px]:hidden underline">nc-task</span>
               </Link>
             </div>
           </AccordionTrigger>
