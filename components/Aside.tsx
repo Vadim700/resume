@@ -15,7 +15,7 @@ export const Aside: React.FC<Props> = ({className}) => {
         width={500}
         height={500}
         alt="Picture of the author"
-        className="rounded-full p-12 aspect-square object-cover"
+        className="rounded-full p-12 aspect-square object-cover max-sm:p-10"
       />
       <section className={cn('info pl-6 mb-4')}>
         <article className="mt-2">

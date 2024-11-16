@@ -7,7 +7,7 @@ interface Props {
 
 export const Header: React.FC<Props> = ({ className }) => {
 	return (
-		<header>
+		<header className={cn(className, '')}>
 			<h1 className={cn(className, 'border-b text-5xl py-6	font-semibold max-[600px]:text-3xl')}>
 					Бекмансуров Вадим
 			</h1>

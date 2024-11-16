@@ -32,11 +32,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(geistSans.variable, geistMono.variable, inter.className, 'antialiased max-w-[1240px] mx-auto p-4 grid grid-cols-[30%_1fr] grid-rows-[auto_1fr] gap-8 gap-y-4 max-[992px]:grid-cols-1 max-[992px]:grid-rows-none')}
+        className={cn(geistSans.variable, geistMono.variable, inter.className, 'antialiased ')}
       >
-        <Aside className='max-[992px]:hidden'/>
-        <Header />
-        {children}
+        <div className="max-w-[1240px] mx-auto p-4 grid grid-cols-[30%_1fr] grid-rows-[auto_1fr] gap-8 gap-y-4 max-[992px]:grid-cols-1 max-[992px]:grid-rows-none">
+          <Aside className='max-[992px]:hidden'/>
+          <Header />
+          {children}
+        </div>
       </body>
     </html>
   );

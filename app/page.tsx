@@ -1,9 +1,10 @@
 import { AccordionGRoup } from '@/components/AccordionGroup';
+import { SheetGRoup } from '@/components/SheetGroup';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-[992px]:relative">
       <p className="mb-4">
         Опыт веб-разработки более трех лет. Самостоятельно разрабатываю
         компоненты и веб страницы любой сложности. Верстаю быстро, валидно,
@@ -16,7 +17,7 @@ export default function Home() {
         <article className="pt-4">
           <div className=" flex justify-between ">
             <p className="font-semibold">Frontend разработчик </p>
-            <span>нояб 2023 — наст. время</span>
+            <span className='max-[450px]:text-sm'>нояб 2023 — наст. время</span>
           </div>
           <p className="italic mb-2">
             <Link
@@ -122,7 +123,9 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-semibold border-b pb-4">Навыки</h2>
         <article className="pt-2 flex items-center justify-between w-full">
-          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">HTML CSS JS PHP</span>
+          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">
+            HTML CSS JS PHP
+          </span>
           <span className="border w-full max-w-52 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36"></span>
         </article>
         <article className="pt-2 flex items-center justify-between w-full">
@@ -132,7 +135,9 @@ export default function Home() {
           <span className="border w-full max-w-52 shrink-0 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36"></span>
         </article>
         <article className="pt-2 mb-4 flex items-center justify-between w-full">
-          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">React.js Next.js TS</span>
+          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">
+            React.js Next.js TS
+          </span>
           <span className="border w-full max-w-40  inline-block h-2 bg-sky-600 rounded-full max-[478px]:max-w-28"></span>
         </article>
       </section>
@@ -145,6 +150,10 @@ export default function Home() {
           Expo 2024
         </div>
       </section>
+
+      <div className="hidden max-[992px]:block ">
+        <SheetGRoup />
+      </div>
     </main>
   );
 }
