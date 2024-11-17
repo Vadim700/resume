@@ -2,12 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import { cn } from '@/components/lib/utils';
 import Link from 'next/link';
+import { TelegrammIcon } from './shared/TelegrammIcon';
+import { WhatsAppIcon } from './shared/WhatsAppIcon';
 
 interface Props {
   className?: string;
 }
 
-export const Aside: React.FC<Props> = ({className}) => {
+export const Aside: React.FC<Props> = ({ className }) => {
   return (
     <aside className={cn(className, 'row-span-2  bg-[#406592]	text-white pb-6')}>
       <Image
@@ -17,7 +19,7 @@ export const Aside: React.FC<Props> = ({className}) => {
         alt="Picture of the author"
         className="rounded-full p-12 aspect-square object-cover max-sm:p-10"
       />
-      <section className={cn('info pl-6 mb-4')}>
+      <section className={cn('pl-6 mb-4')}>
         <article className="mt-2">
           <h3 className="pb-2 text-xl border-b font-semibold">Личные данные</h3>
           <h4 className="mt-2 font-semibold">Имя</h4>
@@ -79,7 +81,7 @@ export const Aside: React.FC<Props> = ({className}) => {
           <p>г. Челябинск</p>
         </article>
       </section>
-      <section className={cn('info pl-6 mb-4')}>
+      <section className={cn('pl-6 mb-4')}>
         <h3 className="pb-2 text-xl border-b font-semibold">Интересы</h3>
         <ul>
           <li className="mt-2 font-semibold text-base/4">
@@ -90,7 +92,7 @@ export const Aside: React.FC<Props> = ({className}) => {
           <li className="font-semibold">3D визуализация</li>
         </ul>
       </section>
-      <section className={cn('info pl-6')}>
+      <section className={cn('pl-6 mb-4')}>
         <h3 className="pb-2 text-xl border-b font-semibold">Языки</h3>
         <p className="mt-2 flex justify-between pr-6">
           <span className="font-semibold">Русский</span>
@@ -100,6 +102,20 @@ export const Aside: React.FC<Props> = ({className}) => {
           <span className="font-semibold">Английский</span>
           <span>Хорошо</span>
         </p>
+      </section>
+      <section className={cn('pl-6')}>
+        <ul className="flex items-center gap-5 mt-8">
+          <li className="hover:scale-105 transition-transform">
+            <Link href={'https://t.me/Nikadim700'}>
+              <TelegrammIcon size="50px" className="text-white" />
+            </Link>
+          </li>
+          <li className="hover:scale-105 transition-transform">
+            <Link href={'https://wa.me/89085728793'}>
+              <WhatsAppIcon size="50px" className="text-white" />
+            </Link>
+          </li>
+        </ul>
       </section>
     </aside>
   );

@@ -97,7 +97,7 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <p className="italic">Мой вклад в проект:</p>
             <div>
               Уменьшил скорость загрузки главной страницы и каточки товара путем
-              миграции со slick-slider(jQuery) на swiper-slider(нативынй js).
+              миграции со slick-slider(jQuery) на swiper-slider(нативный js).
               Разработал фронт таблицы-калькулятора подборки товара.
             </div>
           </AccordionContent>

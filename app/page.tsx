@@ -15,9 +15,12 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-semibold border-b pb-4">Опыт работы</h2>
         <article className="pt-4">
-          <div className=" flex justify-between ">
+          <div className=" flex justify-between gap-2">
             <p className="font-semibold">Frontend разработчик </p>
-            <span className='max-[450px]:text-sm'>нояб 2023 — наст. время</span>
+            <span className="max-[450px]:hidden">нояб 2023 — наст. время</span>
+            <span className="min-[450px]:hidden whitespace-nowrap min-[450px]:text-sm">
+              08.2023 — наст. время
+            </span>
           </div>
           <p className="italic mb-2">
             <Link
@@ -35,9 +38,12 @@ export default function Home() {
           </p>
         </article>
         <article className="pt-4">
-          <div className="flex justify-between ">
+          <div className="flex justify-between gap-2">
             <p className="font-semibold">Frontend разработчик / верстальщик </p>
-            <span>дек 2022 — нояб 2023</span>
+            <span className="max-[450px]:hidden">дек 2022 — нояб 2023</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              12.2022—08.2023
+            </span>
           </div>
           <p className="italic mb-2">
             Индивидуальное предпринимательство / частная практика / фриланс
@@ -61,9 +67,12 @@ export default function Home() {
           Образование и квалификации
         </h2>
         <article className="max-[600px]:mb-2">
-          <div className="flex justify-between pt-2 mb-2">
+          <div className="flex justify-between pt-2 mb-2 gap-2">
             <p className="font-semibold">Неоконченное высшее</p>
-            <span>сент 2019 - фев 2023</span>
+            <span className="max-[450px]:hidden">сент 2019 - фев 2023</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              09.2019-02.2023
+            </span>
           </div>
           <div className="italic max-[600px]:mb-2">
             Озёрский технологический институт, (филиал) &quot;НИЯУ МИФИ&quot;,
@@ -77,9 +86,12 @@ export default function Home() {
           </div>
         </article>
         <article>
-          <div className="flex justify-between pt-2 mb-2">
+          <div className="flex justify-between pt-2 mb-2 gap-2">
             <p className="font-semibold">Неоконченное высшее</p>
-            <span>сент 2007 - май 2011</span>
+            <span className="max-[450px]:hidden">сент 2007 - май 2011</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              09.2007-05.2011
+            </span>
           </div>
           <div className="italic max-[600px]:mb-2">
             Филиал Южно-Уральского государственного университета (Национальный
@@ -100,21 +112,30 @@ export default function Home() {
         <article>
           <div className="flex justify-between pt-2 mb-2">
             <p className="font-semibold">Курс по React</p>
-            <span>авг 2023 - окт 2023</span>
+            <span className="max-[450px]:hidden">авг 2023 - окт 2023</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              08.2023-10.2023
+            </span>
           </div>
           <div className="italic">learn.javascript.ru, React</div>
         </article>
         <article>
           <div className="flex justify-between pt-2 mb-2">
             <p className="font-semibold">JavaScript/DOM/Интерфейсы</p>
-            <span>июнь 2023 - июнь 2023</span>
+            <span className="max-[450px]:hidden">июнь 2023 - июнь 2023</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              06.2023-07.2023
+            </span>
           </div>
           <div className="italic">learn.javascript.ru, JavaScript</div>
         </article>
         <article>
           <div className="flex justify-between pt-2 mb-2">
             <p className="font-semibold">Курс по современной верстке</p>
-            <span>фев 2023 - апр 2023</span>
+            <span className="max-[450px]:hidden">фев 2023 - апр 2023</span>
+            <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
+              02.2023-04.2023
+            </span>
           </div>
           <div className="italic mb-4">learn.javascript.ru, HTML - верстка</div>
         </article>
@@ -123,19 +144,19 @@ export default function Home() {
       <section>
         <h2 className="text-2xl font-semibold border-b pb-4">Навыки</h2>
         <article className="pt-2 flex items-center justify-between w-full">
-          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">
+          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm  max-[478px]:mr-0">
             HTML CSS JS PHP
           </span>
-          <span className="border w-full max-w-52 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36"></span>
+          <span className="border w-full max-w-52 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36 shrink-0"></span>
         </article>
         <article className="pt-2 flex items-center justify-between w-full">
-          <span className="mr-20 max-[478px]:text-sm">
+          <span className="mr-20 max-[478px]:text-sm max-[478px]:mr-0">
             SASS(SCSS) БЭМ style-module Tailwind MUI shadcn/ui
           </span>
-          <span className="border w-full max-w-52 shrink-0 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36"></span>
+          <span className="border w-full max-w-52 shrink-0 inline-block h-2 bg-sky-800 rounded-full max-[478px]:max-w-36 shrink-0"></span>
         </article>
         <article className="pt-2 mb-4 flex items-center justify-between w-full">
-          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm">
+          <span className="mr-20 whitespace-nowrap max-[478px]:text-sm max-[478px]:mr-0">
             React.js Next.js TS
           </span>
           <span className="border w-full max-w-40  inline-block h-2 bg-sky-600 rounded-full max-[478px]:max-w-28"></span>
