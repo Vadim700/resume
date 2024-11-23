@@ -38,7 +38,7 @@ export const SelectGroup: React.FC<Props> = ({ className, lang }) => {
   return (
     <div className={className}>
       <Select onValueChange={handleChange}>
-        <SelectTrigger className="w-[80px] uppercase text-lg border-[#406592]">
+        <SelectTrigger className="w-[80px] uppercase text-lg border-[#406592]" title="language">
           <SelectValue placeholder={lang} />
         </SelectTrigger>
         <SelectContent>
