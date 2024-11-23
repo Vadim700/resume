@@ -8,12 +8,14 @@ import {
 } from '@/components/ui/accordion';
 import Link from 'next/link';
 import { CircleDollarSign, GraduationCap } from 'lucide-react';
+import { Resume } from '@/types';
 
 interface Props {
   className?: string;
+  dict: Resume;
 }
 
-export const AccordionGRoup: React.FC<Props> = ({ className }) => {
+export const AccordionGRoup: React.FC<Props> = ({ className, dict }) => {
   return (
     <div className={className}>
       <Accordion type="multiple">
@@ -22,7 +24,7 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
                 <span className="max-[678px]:hidden">
-                  Коммерческий проект: MOISEIKIN
+                  {dict.page.projects.moiseikin.name.comercial}: MOISEIKIN
                 </span>
                 <span
                   className="flex items-center gap-2 min-[678px]:hidden"
@@ -46,22 +48,17 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
           </AccordionTrigger>
           <AccordionContent>
             <div className="flex gap-4">
-              <div className="italic">Стек:</div>
+              <div className="italic">
+                {dict.page.projects.moiseikin.steck.name}
+              </div>
               <span className="mb-2">
-                1c-битрикс, php, javaScript, jQuery, sass(scss), БЭМ
+                {dict.page.projects.moiseikin.steck.value}
               </span>
             </div>
-            <p className="italic">Мой вклад в проект:</p>
-            <div>
-              Разработал мессенджер на чистом js с ленивой подгрузкой, поиском
-              по сообщениям и названиям чатов, функционалом отправки чатов в
-              архив и возможностью прикрепления файлов. Расширил функционал
-              конструктора сайтов. Разработал функционал drag-end-drop
-              сортировки в избранных товарах. Разработал функционал привизок
-              продуктов для объединения в наборы. Произвел миграцию Google карты
-              на современную библиотеку. Заменил устаревшие jQery библиотеки на
-              современные плагины.
-            </div>
+            <p className="italic">
+              {dict.page.projects.moiseikin.contribution.name}
+            </p>
+            <div>{dict.page.projects.moiseikin.contribution.value}</div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
@@ -69,14 +66,15 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
                 <span className="max-[678px]:hidden">
-                  Коммерческий проект: завод Сота
+                  {dict.page.projects.sota.name.comercial}:
+                  {dict.page.projects.sota.name.companyName}
                 </span>
                 <span
                   className="flex items-center gap-2 min-[678px]:hidden"
                   title="коммерческий проект"
                 >
                   <CircleDollarSign />
-                  завод Сота
+                  {dict.page.projects.sota.name.companyName}
                 </span>
               </span>
               <Link
@@ -85,21 +83,21 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
                 className="text-sky-800 hover:underline underline-offset-4"
               >
                 <span className="max-[540px]:hidden">https://shopsota.ru/</span>
-                <span className="min-[540px]:hidden underline">завод Сота</span>
+                <span className="min-[540px]:hidden underline">
+                  {dict.page.projects.sota.name.companyName}
+                </span>
               </Link>
             </div>
           </AccordionTrigger>
           <AccordionContent>
             <div className="flex gap-4">
-              <p className="italic">Стек:</p>
-              <div className="mb-2">1c-битрикс, php, javaScript, jQuery</div>
+              <p className="italic">{dict.page.projects.sota.steck.name}</p>
+              <div className="mb-2">{dict.page.projects.sota.steck.value}</div>
             </div>
-            <p className="italic">Мой вклад в проект:</p>
-            <div>
-              Уменьшил скорость загрузки главной страницы и каточки товара путем
-              миграции со slick-slider(jQuery) на swiper-slider(нативный js).
-              Разработал фронт таблицы-калькулятора подборки товара.
-            </div>
+            <p className="italic">
+              {dict.page.projects.sota.contribution.name}
+            </p>
+            <div>{dict.page.projects.sota.contribution.value}</div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
@@ -107,7 +105,8 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
                 <span className="max-[678px]:hidden">
-                  Некоммерческий проект: Confident Pepper
+                  {dict.page.projects.confidentPepper.name.comercial}:{' '}
+                  {dict.page.projects.confidentPepper.name.companyName}
                 </span>
                 <span
                   className="flex items-center gap-2 min-[678px]:hidden"
@@ -133,17 +132,17 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
           </AccordionTrigger>
           <AccordionContent>
             <div className="flex gap-4">
-              <p className="italic">Стек:</p>
+              <p className="italic">
+                {dict.page.projects.confidentPepper.steck.name}
+              </p>
               <div className="mb-2">
-                React.js, redux-toolkit, typeScript, Rest API, react-persist,
-                react-router-dom v.6, style-module
+                {dict.page.projects.confidentPepper.steck.value}
               </div>
             </div>
-            <p className="italic">Мой вклад в проект:</p>
-            <div>
-              Разработал с нуля приложение для работы с данными, полеченными из
-              API.
-            </div>
+            <p className="italic">
+              {dict.page.projects.confidentPepper.contribution.name}
+            </p>
+            <div>{dict.page.projects.confidentPepper.contribution.value}</div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
@@ -151,7 +150,7 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <div className="w-full pr-10 flex justify-between max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
                 <span className="max-[678px]:hidden">
-                  Коммерческий проект: Burmash
+                  {dict.page.projects.burmash.name.comercial}: Burmash
                 </span>
                 <span
                   className="flex items-center gap-2 min-[678px]:hidden"
@@ -175,14 +174,13 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
           </AccordionTrigger>
           <AccordionContent>
             <div className="flex gap-4">
-              <p className="italic">Стек:</p>
+              <p className="italic"> {dict.page.projects.burmash.steck.name}</p>
               <div className="mb-2">gulp+webpack, scss, BEM, swiper.js</div>
             </div>
-            <p className="italic">Мой вклад в проект:</p>
-            <div>
-              Сверстал многостраничный сайт придерживаясь адаптивной,
-              семантической, кроссбраузервной верстки.
-            </div>
+            <p className="italic">
+              {dict.page.projects.burmash.contribution.name}
+            </p>
+            <div>{dict.page.projects.burmash.contribution.value}</div>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
@@ -190,7 +188,7 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
             <div className="w-full flex justify-between pr-10 max-[678px]:pr-6">
               <span className="inline-block mr-10 font-semibold">
                 <span className="max-[678px]:hidden">
-                  Некоммерческий проект: nc-task
+                  {dict.page.projects.ncTask.name.comercial}: nc-task
                 </span>
                 <span
                   className="flex items-center gap-2 min-[678px]:hidden"
@@ -214,17 +212,16 @@ export const AccordionGRoup: React.FC<Props> = ({ className }) => {
           </AccordionTrigger>
           <AccordionContent>
             <div className="flex gap-4">
-              <p className="italic">Стек:</p>
+              <p className="italic">{dict.page.projects.ncTask.steck.name}</p>
               <div className="mb-2">
                 React.js, redux-toolkit, typeScript, Rest API, react-persist,
                 react-router-dom v.6, style-module
               </div>
             </div>
-            <p className="italic">Мой вклад в проект:</p>
-            <div>
-              Разработал с нуля приложение для работы с анимацией в React и
-              динамической сменой контента.
-            </div>
+            <p className="italic">
+              {dict.page.projects.ncTask.contribution.name}
+            </p>
+            <div>{dict.page.projects.ncTask.contribution.value}</div>
           </AccordionContent>
         </AccordionItem>
       </Accordion>

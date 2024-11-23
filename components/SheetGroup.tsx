@@ -10,10 +10,14 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet';
 import { Aside } from './Aside';
+import { Resume } from '@/types';
 
 const SHEET_SIDES = ['left'] as const;
+type Props = {
+  dict: Resume;
+};
 
-export function SheetGRoup() {
+export function SheetGRoup({ dict }: Props) {
   return (
     <div className="">
       {SHEET_SIDES.map((side) => (
@@ -31,7 +35,7 @@ export function SheetGRoup() {
               <SheetTitle></SheetTitle>
               <SheetDescription></SheetDescription>
             </SheetHeader>
-            <Aside />
+            <Aside dict={dict} />
           </SheetContent>
         </Sheet>
       ))}

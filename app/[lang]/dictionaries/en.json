@@ -1,0 +1,198 @@
+{
+  "header": "Vadim Bekmansurov",
+  "aside": {
+    "personalData": {
+      "title": "Personal data",
+      "name": {
+        "title": "Name",
+        "value": "Bekmansurov Vadim Vladislavovich"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+7 908 572 87 93"
+      },
+      "email": {
+        "title": "Email",
+        "value": {
+          "mainEmail": "bekmansurov700@mail.ru",
+          "altEmail": "bekmansurovvadim@gmail.com"
+        }
+      },
+      "github": {
+        "title": "GitHub",
+        "value": "https://github.com/Vadim700"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "value": "http://linkedin.com/in/vadim-bekmansurov-220153328"
+      },
+      "dateOfBirth": {
+        "title": "Date of Birth",
+        "value": "08-11-1988"
+      },
+      "PlaceOfBirth": {
+        "title": "Place of Birth",
+        "value": "Chelyabinsk"
+      }
+    },
+    "hobbies": {
+      "title":"Hobbies",
+      "first": "Experiments with new technologies",
+      "second": "Fiction literature",
+      "third": "Web design",
+      "fourth": "3D visualization"
+    },
+    "languages": {
+      "title":"Languages",
+      "main": {
+        "lang": {
+          "title": "Russian",
+          "value": "Native language"
+        }
+      },
+      "alt": {
+        "lang": {
+          "title": "English",
+          "value": "Good"
+        }
+      }
+    }
+  },
+  "page": {
+    "subtitle": "Over three years of web development experience. I independently develop components and web pages of any complexity. I code quickly, validly, responsively, semantically, and cross-browser. Currently ready to transition to a project using React (Next.js). I am looking forward to interesting projects and opportunities for professional growth and development.",
+    "experience": {
+      "title": "Work Experience",
+      "current": {
+        "name": "Frontend Developer",
+        "date": "Nov 2023 — Present",
+        "company": "UMA Soft",
+        "ditail": "Development and support of an online jewelry store. Implementation of tasks to meet business needs: landing pages, authorization blocks, form validation, messenger, sliders, drag-and-drop sorting, lazy loading, etc. Optimization of page loading speed."
+      },
+      "previous": {
+        "name": "Frontend Developer / Markup developer",
+        "date": "Dec 2022 — Nov 2023",
+        "company": "Individual Entrepreneurship / Private Practice / Freelance",
+        "ditail": "Semantic, responsive, cross-browser layout. Development of components and pages of varying complexity using native js with libraries and plugins. Development of complex animations using js+css."
+      }
+    },
+    "projects": {
+      "title": "Projects",
+      "moiseikin": {
+        "name": {
+          "comercial": "Commercial Project",
+          "companyName": "MOISEIKIN"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "1C-Bitrix, PHP, JavaScript, jQuery, Sass(SCSS), BEM"
+        },
+        "contribution": {
+          "name": "My Contribution to the Project:",
+          "value": "Developed a messenger in pure js with lazy loading, message and chat title search functionality, chat archiving, and file attachment capabilities. Expanded functionality of the site builder. Developed drag-and-drop sorting functionality for favorite products. Developed functionality for binding products together into sets. Migrated Google Maps to a modern library. Replaced outdated jQuery libraries with modern plugins."
+        }
+      },
+      "sota": {
+        "name": {
+          "comercial": "Commercial Project",
+          "companyName": "Sota Plant"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "1C-Bitrix, PHP, JavaScript, jQuery"
+        },
+        "contribution": {
+          "name": "My Contribution to the Project:",
+          "value": "Reduced main page and product card loading speed by migrating from slick-slider(jQuery) to swiper-slider(native js). Developed front end of the calculator table for product selection."
+        }
+      },
+      "confidentPepper": {
+        "name": {
+          "comercial": "Non-Commercial Project",
+          "companyName": "Confident Pepper"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "React.js, redux-toolkit, TypeScript, Rest API, react-persist, react-router-dom v.6, style-module"
+        },
+        "contribution": {
+          "name": "My Contribution to the Project:",
+          "value": "Developed an application from scratch to work with data received from the API."
+        }
+      },
+      "burmash": {
+        "name": {
+          "comercial": "Commercial Project",
+          "companyName": "Burmash"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "Gulp+Webpack, SCSS, BEM, JavaScript, Swiper.js"
+        },
+        "contribution": {
+          "name": "My Contribution to the Project:",
+          "value": "Developed a multi-page site adhering to responsive, semantic, and cross-browser layout principles."
+        }
+      },
+      "ncTask": {
+        "name": {
+          "comercial": "Non-Commercial Project",
+          "companyName": "nc-task"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "React.js, redux-toolkit, TypeScript, Rest API, react-persist, react-router-dom v.6, style-module"
+        },
+        "contribution": {
+          "name": "My Contribution to the Project:",
+          "value": "Developed an application from scratch for animation in React and dynamic content changes."
+        }
+      }
+    },
+    "education": {
+      "title":"Education and qualifications",
+      "miphi": {
+        "title": "Incomplete Higher Education",
+        "date": "Sep 2019 - Feb 2023",
+        "name": "Ozyorsk Technological Institute, (branch) \"NIYAU MEPhI\", Ozyorsk (Chelyabinsk Region)",
+        "specialization": {
+          "name": "Specialization",
+          "value": " TM and MAHP, Technological Machines and Equipment"
+        }
+      },
+      "susu": {
+        "title": "Incomplete Higher Education",
+        "date": "Sep 2007 - May 2011",
+        "name": "Branch of South Ural State University (National Research University), Ozyorsk (Chelyabinsk Region)",
+        "specialization": {
+          "name": "Specialization",
+          "value": " Information Technologies, Computing Machines, Complexes, Systems, and Networks"
+        }
+      }
+    },
+    "courses": {
+      "title":"Courses",
+      "react": {
+        "title": "React Course",
+        "date": "Aug 2023 - Oct 2023",
+        "name": "learn.javascript.ru, React"
+      },
+      "js": {
+        "title": "JavaScript/DOM/Interfaces",
+        "date": "Jun 2023 - Jun 2023",
+        "name": "learn.javascript.ru, JavaScript"
+      },
+      "markup": {
+        "title": "Modern Layout Course",
+        "date": "Feb 2023 - Apr 2023",
+        "name": "learn.javascript.ru, HTML - Layout"
+      }
+    },
+    "skills": {
+      "title": "Skills"
+    },
+    "achivments": {
+      "title": "Achievements",
+      "value": "Developed landing pages representing the jewelry factory at exhibitions in St. Petersburg JUNWEX St. Petersburg 2023 and Shanghai China International Import Expo 2024"
+    }
+  }
+}

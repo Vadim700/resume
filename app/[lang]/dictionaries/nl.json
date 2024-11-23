@@ -1,0 +1,198 @@
+{
+  "header": "Vadim Beckmansurov",
+  "aside": {
+    "personalData": {
+      "title": "Identität der Person",
+      "name": {
+        "title": "Name",
+        "value": "Beckmansurov Vadim Vladislavovich"
+      },
+      "phone": {
+        "title": "Telefon",
+        "value": "+7 908 572 87 93"
+      },
+      "email": {
+        "title": "E-Mail",
+        "value": {
+          "mainEmail": "bekmansurov700@mail.ru",
+          "altEmail": "bekmansurovvadim@gmail.com"
+        }
+      },
+      "github": {
+        "title": "GitHub",
+        "value": "https://github.com/Vadim700"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "value": "http://linkedin.com/in/vadim-bekmansurov-220153328"
+      },
+      "dateOfBirth": {
+        "title": "Geburtsdatum",
+        "value": "08-11-1988"
+      },
+      "PlaceOfBirth": {
+        "title": "Geburtsort",
+        "value": "Tscheljabinsk"
+      }
+    },
+    "hobbies": {
+      "title":"Hobby",
+      "first": "Experimente mit neuen Technologien",
+      "second": "Schöne Literatur",
+      "third": "Webdesign",
+      "fourth": "3D-Visualisierung"
+    },
+    "languages": {
+      "title":"Sprachen",
+      "main": {
+        "lang": {
+          "title": "Russisch",
+          "value": "Muttersprache"
+        }
+      },
+      "alt": {
+        "lang": {
+          "title": "Englisch",
+          "value": "Gut"
+        }
+      }
+    }
+  },
+  "page": {
+    "subtitle": "Über drei Jahre Erfahrung in der Webentwicklung. Ich entwickle selbstständig Komponenten und Webseiten jeder Komplexität. Ich gestalte schnell, valide, responsiv, semantisch und cross-browser-kompatibel. Derzeit bereit, in einem Projekt mit dem Stack React (Next.js) zu wechseln. Ich freue mich auf interessante Projekte und die Möglichkeit des beruflichen Wachstums und der Entwicklung.",
+    "experience": {
+      "title": "Berufserfahrung",
+      "current": {
+        "name": "Frontend Entwickler",
+        "date": "Nov 2023 — Gegenwart",
+        "company": "UMA Soft",
+        "ditail": "Entwicklung und Unterstützung eines Online-Shops für Schmuck. Umsetzung von Aufgaben entsprechend den Bedürfnissen des Unternehmens: Landing Pages, Anmeldeblöcke, Formularvalidierung, Messenger, Slider, Drag-and-Drop-Sortierung, Lazy Loading usw. Optimierung der Seitenladegeschwindigkeit."
+      },
+      "previous": {
+        "name": "Frontend Entwickler / Markup-Entwickler",
+        "date": "Dez 2022 — Nov 2023",
+        "company": "Einzelunternehmer / private Praxis / Freiberufler",
+        "ditail": "Semantisches, responsives, cross-browser-fähiges Layout. Entwicklung von Komponenten und Seiten unterschiedlicher Komplexität mit reinem JS unter Verwendung von Bibliotheken und Plugins. Entwicklung komplexer Animationen mit JS und CSS."
+      }
+    },
+    "projects": {
+      "title": "Projekte",
+      "moiseikin": {
+        "name": {
+          "comercial": "Kommerzielles Projekt",
+          "companyName": "MOISEIKIN"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "1c-Bitrix, PHP, JavaScript, jQuery, SASS (SCSS), BEM"
+        },
+        "contribution": {
+          "name": "Mein Beitrag zum Projekt:",
+          "value": "Ich habe einen Messenger in reinem JS mit Lazy Loading, Suchfunktion für Nachrichten und Chat-Namen, Archivierungsfunktion für Chats und die Möglichkeit, Dateien anzuhängen, entwickelt. Ich habe die Funktionalität des Website-Baukastens erweitert. Ich habe die Drag-and-Drop-Sortierung für Favoritenprodukte entwickelt. Ich habe die Funktionalität für die Zusammenstellung von Produkten in Sets entwickelt. Ich habe die Migration von Google Maps auf moderne Bibliotheken durchgeführt. Ich habe veraltete jQuery-Bibliotheken durch moderne Plugins ersetzt."
+        }
+      },
+      "sota": {
+        "name": {
+          "comercial": "Kommerzielles Projekt",
+          "companyName": "Sota Werk"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "1c-Bitrix, PHP, JavaScript, jQuery"
+        },
+        "contribution": {
+          "name": "Mein Beitrag zum Projekt:",
+          "value": "Ich habe die Ladegeschwindigkeit der Hauptseite und der Produktkategorie durch den Wechsel von slick-slider (jQuery) zu swiper-slider (reines JS) reduziert. Ich habe die Frontend-Tabelle für den Produktkalkulator entwickelt."
+        }
+      },
+      "confidentPepper": {
+        "name": {
+          "comercial": "Nichtkommerzielles Projekt",
+          "companyName": "Confident Pepper"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "React.js, Redux-Toolkit, TypeScript, REST API, React-Persist, React-Router-Dom v.6, Style-Module"
+        },
+        "contribution": {
+          "name": "Mein Beitrag zum Projekt:",
+          "value": "Ich habe eine Anwendung von Grund auf neu entwickelt, um mit Daten zu arbeiten, die von der API abgerufen wurden."
+        }
+      },
+      "burmash": {
+        "name": {
+          "comercial": "Kommerzielles Projekt",
+          "companyName": "Burmash"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "Gulp + Webpack, SCSS, BEM, JavaScript, Swiper.js"
+        },
+        "contribution": {
+          "name": "Mein Beitrag zum Projekt:",
+          "value": "Ich habe eine mehrseitige Website unter Berücksichtigung von responsivem, semantischem, cross-browser-fähigem Layout erstellt."
+        }
+      },
+      "ncTask": {
+        "name": {
+          "comercial": "Nichtkommerzielles Projekt",
+          "companyName": "nc-task"
+        },
+        "steck": {
+          "name": "Stack",
+          "value": "React.js, Redux-Toolkit, TypeScript, REST API, React-Persist, React-Router-Dom v.6, Style-Module"
+        },
+        "contribution": {
+          "name": "Mein Beitrag zum Projekt:",
+          "value": "Ich habe eine Anwendung von Grund auf neu entwickelt, um Animationen in React und dynamische Inhaltsänderungen zu verwalten."
+        }
+      }
+    },
+    "education": {
+      "title":"Ausbildung und Qualifikationen",
+      "miphi": {
+        "title": "Unvollständiges Hochschulstudium",
+        "date": "Sept 2019 - Feb 2023",
+        "name": "Ozersky Technologisches Institut, (Zweigstelle) \"НИЯУ МИФИ\", Ozersk (Tscheljabinsk Gebiet)",
+        "specialization": {
+          "name": "Spezialisierung",
+          "value": " Technologische Maschinen und Ausrüstung"
+        }
+      },
+      "susu": {
+        "titel": "Unvollständiges Hochschulstudium",
+        "date": "Sept 2007 - Mai 2011",
+        "name": "Zweigstelle der Süduralischen Staatlichen Universität (Nationale Forschungsuniversität), Ozersk (Tscheljabinsk Gebiet)",
+        "specialization": {
+          "name": "Spezialisierung",
+          "value": " Informationstechnologien, Rechenmaschinen, Systeme und Netzwerke"
+        }
+      }
+    },
+    "courses": {
+      "title":"Golfkurse",
+      "react": {
+        "title": "React-Kurs",
+        "date": "Aug 2023 - Okt 2023",
+        "name": "learn.javascript.ru, React"
+      },
+      "js": {
+        "title": "JavaScript/DOM/Schnittstellen",
+        "date": "Juni 2023 - Juni 2023",
+        "name": "learn.javascript.ru, JavaScript"
+      },
+      "markup": {
+        "title": "Kurs in modernem Layout",
+        "date": "Feb 2023 - Apr 2023",
+        "name": "learn.javascript.ru, HTML - Layout"
+      }
+    },
+    "skills": {
+      "title": "Fähigkeiten"
+    },
+    "achivments": {
+      "title": "Errungenschaften",
+      "value": "Ich habe Landing Pages für den Schmuckhersteller auf Messen in St. Petersburg JUNWEX St. Petersburg 2023 und Shanghai China International Import Expo 2024 entwickelt."
+    }
+  }
+}

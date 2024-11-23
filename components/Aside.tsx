@@ -4,12 +4,16 @@ import { cn } from '@/components/lib/utils';
 import Link from 'next/link';
 import { TelegrammIcon } from './shared/TelegrammIcon';
 import { WhatsAppIcon } from './shared/WhatsAppIcon';
+import { Resume } from '@/types';
 
 interface Props {
   className?: string;
+  dict: Resume;
 }
 
-export const Aside: React.FC<Props> = ({ className }) => {
+export const Aside: React.FC<Props> = ({ className, dict }) => {
+  const personal = dict?.aside.personalData;
+
   return (
     <aside className={cn(className, 'row-span-2  bg-[#406592]	text-white pb-6')}>
       <Image
@@ -21,20 +25,22 @@ export const Aside: React.FC<Props> = ({ className }) => {
       />
       <section className={cn('pl-6 mb-4')}>
         <article className="mt-2">
-          <h3 className="pb-2 text-xl border-b font-semibold">Личные данные</h3>
-          <h4 className="mt-2 font-semibold">Имя</h4>
-          <span>Бекмансуров Вадим Владиславович</span>
+          <h3 className="pb-2 text-xl border-b font-semibold">
+            {personal?.title}
+          </h3>
+          <h4 className="mt-2 font-semibold">{personal?.name.title}</h4>
+          <span>{personal?.name.value}</span>
         </article>
 
         <article className="mt-2">
-          <h4 className="font-semibold">Номер телефона</h4>
-          <Link href="tel:+79085728793" className="hover:underline">
+          <h4 className="font-semibold">{personal?.phone.title}</h4>
+          <Link href="tel:+79085728793" className="hover:underline inline">
             +7 908 572 87 93
           </Link>
         </article>
 
         <article className="mt-2">
-          <h4 className="font-semibold">Email</h4>
+          <h4 className="font-semibold">{personal?.email.title}</h4>
           <Link
             href="mailto:bekmansurov700@mail.ru"
             className="hover:underline block"
@@ -72,35 +78,43 @@ export const Aside: React.FC<Props> = ({ className }) => {
         </article>
 
         <article className="mt-2">
-          <h4 className="font-semibold">Дата рождения</h4>
-          <p>08-11-1988</p>
+          <h4 className="font-semibold">{personal?.dateOfBirth.title}</h4>
+          <p>{personal?.dateOfBirth.value}</p>
         </article>
 
         <article className="mt-2">
-          <h4 className="font-semibold">Место рождения</h4>
-          <p>г. Челябинск</p>
+          <h4 className="font-semibold">{personal?.PlaceOfBirth.title}</h4>
+          <p>{personal?.PlaceOfBirth.value}</p>
         </article>
       </section>
       <section className={cn('pl-6 mb-4')}>
-        <h3 className="pb-2 text-xl border-b font-semibold">Интересы</h3>
+        <h3 className="pb-2 text-xl border-b font-semibold">
+          {dict?.aside?.hobbies.title}
+        </h3>
         <ul>
           <li className="mt-2 font-semibold text-base/4">
-            Эксперементы с новыми технологиями
+            {dict?.aside?.hobbies.first}
           </li>
-          <li className="font-semibold">Художественная литература</li>
-          <li className="font-semibold">Веб-дизайн</li>
-          <li className="font-semibold">3D визуализация</li>
+          <li className="font-semibold">{dict?.aside?.hobbies.second}</li>
+          <li className="font-semibold">{dict?.aside?.hobbies.third}</li>
+          <li className="font-semibold">{dict?.aside?.hobbies.fourth}</li>
         </ul>
       </section>
       <section className={cn('pl-6 mb-4')}>
-        <h3 className="pb-2 text-xl border-b font-semibold">Языки</h3>
+        <h3 className="pb-2 text-xl border-b font-semibold">
+          {dict.aside.languages.title}
+        </h3>
         <p className="mt-2 flex justify-between pr-6">
-          <span className="font-semibold">Русский</span>
-          <span>Родной язык</span>
+          <span className="font-semibold">
+            {dict?.aside?.languages.main.lang.title}
+          </span>
+          <span>{dict?.aside?.languages.main.lang.value}</span>
         </p>
         <p className="flex justify-between pr-6">
-          <span className="font-semibold">Английский</span>
-          <span>Хорошо</span>
+          <span className="font-semibold">
+            {dict?.aside?.languages.alt.lang.title}
+          </span>
+          <span>{dict?.aside?.languages.alt.lang.value}</span>
         </p>
       </section>
       <section className={cn('pl-6')}>
