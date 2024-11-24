@@ -25,9 +25,9 @@ export function SheetGRoup({ dict }: Props) {
           <SheetTrigger asChild>
             <Button
               variant="outline"
-              className="fixed bottom-[23%] left-0 bg-[#406592] text-white -rotate-90 translate-x-[-56px] rounded-tl-[0] rounded-tr-[0]"
+              className="fixed bottom-[23%] left-[-7px] bg-[#406592] text-white -rotate-90 translate-x-[-56px] rounded-tl-[0] rounded-tr-[0] h-[36px] w-[160px]"
             >
-              Личные данные
+              { dict.aside.personalData.title }
             </Button>
           </SheetTrigger>
           <SheetContent side={side}>
