@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { TelegrammIcon } from './shared/TelegrammIcon';
 import { WhatsAppIcon } from './shared/WhatsAppIcon';
 import { Resume } from '@/types';
+import me from '../public/hapy-men.jpeg';
 
 interface Props {
   className?: string;
@@ -17,7 +18,7 @@ export const Aside: React.FC<Props> = ({ className, dict }) => {
   return (
     <aside className={cn(className, 'row-span-2  bg-[#406592]	text-white pb-6')}>
       <Image
-        src="/hapy-men.jpeg"
+        src={me}
         width={500}
         height={500}
         alt="Picture of the author"
@@ -120,12 +121,12 @@ export const Aside: React.FC<Props> = ({ className, dict }) => {
       <section className={cn('pl-6')}>
         <ul className="flex items-center gap-5 mt-8">
           <li className="hover:scale-105 transition-transform">
-            <Link href={'https://t.me/Nikadim700'} aria-label='telegramm'>
+            <Link href={'https://t.me/Nikadim700'} aria-label="telegramm">
               <TelegrammIcon size="50px" className="text-white" />
             </Link>
           </li>
           <li className="hover:scale-105 transition-transform">
-            <Link href={'https://wa.me/89085728793'} aria-label='whatsApp'>
+            <Link href={'https://wa.me/89085728793'} aria-label="whatsApp">
               <WhatsAppIcon size="50px" className="text-white" />
             </Link>
           </li>
