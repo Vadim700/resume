@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { TelegrammIcon } from './shared/TelegrammIcon';
 import { WhatsAppIcon } from './shared/WhatsAppIcon';
 import { Resume } from '@/types';
-import me from '../public/hapy-men.jpeg';
+import me from '../public/ava_2.jpeg';
 
 interface Props {
   className?: string;
