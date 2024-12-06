@@ -24,7 +24,7 @@ export default async function Home({ params }: { params: Params }) {
               {dict.page.experience.current.date}
             </span>
             <span className="min-[450px]:hidden whitespace-nowrap min-[450px]:text-sm">
-              08.2023 — наст. время
+              11.2023 — наст. время
             </span>
           </div>
           <p className="italic mb-2">
@@ -46,7 +46,7 @@ export default async function Home({ params }: { params: Params }) {
               {dict.page.experience.previous.date}
             </span>
             <span className="min-[450px]:hidden min-[450px]:text-sm whitespace-nowrap">
-              12.2022—08.2023
+              01.2022—11.2023
             </span>
           </div>
           <p className="italic mb-2">{dict.page.experience.previous.company}</p>
